@@ -2,16 +2,24 @@ import config
 import flet
 
 
+tariff_options = [
+    flet.DropdownOption('tariff1'),
+    flet.DropdownOption('tariff2'),
+]
+
+tariff_dropdown = flet.Dropdown(
+    hint_text='Select Tariff',
+    filled=True,
+    border=flet.InputBorder.OUTLINE,
+    border_color=flet.Colors.TRANSPARENT,
+    border_radius=config.border_radius,
+    expand=True,
+    options=tariff_options
+)
+
 controls = [
     flet.Text('Prescription'),
-    flet.Dropdown(
-        label='Select Tariff',
-        filled=True,
-        border=flet.InputBorder.OUTLINE,
-        border_color=flet.Colors.TRANSPARENT,
-        border_radius=config.border_radius,
-        expand=True,
-    ),
+    tariff_dropdown,
     flet.Checkbox(label='Lidocaine'),
     flet.Checkbox(label='Articaine'),
     flet.Checkbox(label='Mepivacaine'),
