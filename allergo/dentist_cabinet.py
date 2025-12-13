@@ -20,7 +20,7 @@ create_order_button = flet.Container(
 )
 
 
-def main(page: flet.Page):
+def main(page: flet.Page) -> None:
     page.padding = flet.padding.only(
         left=config.padding,
         right=config.padding,
