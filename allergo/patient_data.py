@@ -31,7 +31,6 @@ patient_data_card = flet.Card(
     shape=flet.RoundedRectangleBorder(
         radius=config.border_radius,
     ),
-    height=config.card_height,
 )
 
 patient_data_container = flet.Container(

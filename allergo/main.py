@@ -1,5 +1,5 @@
-import dentist_cabinet
 import flet
+import adaptive
 
 
-flet.app(target=dentist_cabinet.main)
+flet.app(target=adaptive.main)

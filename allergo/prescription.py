@@ -40,7 +40,6 @@ prescription_card = flet.Card(
     shape=flet.RoundedRectangleBorder(
         radius=config.border_radius,
     ),
-    height=config.card_height,
 )
 
 prescription_container = flet.Container(
