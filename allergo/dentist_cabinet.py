@@ -4,16 +4,10 @@ import config
 import flet
 
 
-patient_data_container = flet.Container(
-    content=patient_data.patient_data,
-    col={'sm': 12, 'md': 5},
-    expand=True,
-)
-prescription_container = flet.Container(
-    content=prescription.prescription,
-    col={'sm': 12, 'md': 5},
-    expand=True,
-)
+cards_row_controls = [
+    patient_data.patient_data_container,
+    prescription.prescription_container,
+]
 create_order_button = flet.Container(
     content=flet.FilledButton('Create order', expand=True),
     col={'sm': 12, 'md': 10},
@@ -26,7 +20,7 @@ def main(page: flet.Page) -> None:
         right=config.padding,
     )
     cards_row = flet.ResponsiveRow(
-        controls=[patient_data_container, prescription_container],
+        controls=cards_row_controls,
         alignment=flet.MainAxisAlignment.CENTER,
     )
     button_row = flet.ResponsiveRow(

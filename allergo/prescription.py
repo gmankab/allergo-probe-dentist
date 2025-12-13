@@ -31,12 +31,20 @@ controls = [
 ]
 
 
-prescription = flet.Card(
+prescription_card = flet.Card(
     flet.Container(
         content=flet.Column(controls),
         padding=config.padding,
         border_radius=config.border_radius,
     ),
-    shape=flet.RoundedRectangleBorder(radius=config.padding),
-    height=config.card_height
+    shape=flet.RoundedRectangleBorder(
+        radius=config.border_radius,
+    ),
+    height=config.card_height,
+)
+
+prescription_container = flet.Container(
+    content=prescription_card,
+    col={'sm': 12, 'md': 5},
+    expand=True,
 )

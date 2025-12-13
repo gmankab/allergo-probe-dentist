@@ -22,12 +22,20 @@ for hint_text in (
     )
 
 
-patient_data = flet.Card(
+patient_data_card = flet.Card(
     flet.Container(
         content=flet.Column(controls),
         padding=config.padding,
         border_radius=config.border_radius,
     ),
-    shape=flet.RoundedRectangleBorder(radius=config.border_radius),
-    height=config.card_height
+    shape=flet.RoundedRectangleBorder(
+        radius=config.border_radius,
+    ),
+    height=config.card_height,
+)
+
+patient_data_container = flet.Container(
+    content=patient_data_card,
+    col={'sm': 12, 'md': 5},
+    expand=True,
 )
