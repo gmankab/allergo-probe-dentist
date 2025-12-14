@@ -18,12 +18,12 @@ create_order_row = flet.Row(
 def main(
     page: flet.Page,
 ) -> None:
-    patient_data.patient_data_container.height = None
-    prescription.prescription_container.height = None
     page.padding = flet.padding.only(
         left=config.padding,
         right=config.padding,
     )
+    patient_data.patient_data_container.height = None
+    prescription.prescription_container.height = None
     page.scroll = flet.ScrollMode.AUTO
     page.add(patient_data_row)
     page.add(prescription_row)
