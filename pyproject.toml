@@ -4,7 +4,8 @@ version = "25.0.0"
 readme = "readme.md"
 requires-python = ">=3.9"
 dependencies = [
-  "flet==0.28.3"
+  "flet==0.28.3",
+  "qrcode[pil]>=7.4.2",
 ]
 
 [tool.flet]
