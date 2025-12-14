@@ -2,6 +2,7 @@ import desktop
 import mobile
 import config
 import flet
+import qr
 
 
 def adapt(
@@ -21,4 +22,4 @@ def main(
     config.page = page
     page.on_resized=adapt
     adapt()
-
+    config.page.overlay.append(qr.dialog)

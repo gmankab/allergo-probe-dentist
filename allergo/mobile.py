@@ -1,5 +1,6 @@
 import patient_data
 import prescription
+import create_order
 import config
 import flet
 
@@ -9,9 +10,6 @@ patient_data_row = flet.Row(
 )
 prescription_row = flet.Row(
     [prescription.prescription_container]
-)
-create_order_row = flet.Row(
-    [flet.FilledButton('Create order', expand=True)]
 )
 
 
@@ -27,4 +25,4 @@ def mobile(
     page.scroll = flet.ScrollMode.AUTO
     page.add(patient_data_row)
     page.add(prescription_row)
-    page.add(create_order_row)
+    page.add(create_order.create_order_row)

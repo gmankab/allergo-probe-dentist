@@ -1,26 +1,30 @@
 import config
 import flet
 
-controls = [
-    flet.Text('Patient Data'),
-]
 
-for hint_text in (
-    'IIN',
-    'Patient Full Name',
-    'Phone',
-    'Date of Birth',
-):
-    controls.append(
-        flet.TextField(
-            hint_text=hint_text,
-            filled=True,
-            border=flet.InputBorder.OUTLINE,
-            border_color=flet.Colors.TRANSPARENT,
-            border_radius=config.border_radius,
-        )
+def text_field(
+    hint_text: str,
+) -> flet.TextField:
+    return flet.TextField(
+        hint_text=hint_text,
+        filled=True,
+        border=flet.InputBorder.OUTLINE,
+        border_color=flet.Colors.TRANSPARENT,
+        border_radius=config.border_radius,
     )
 
+iin = text_field('IIN')
+patient_full_name = text_field('Patient Full Name')
+phone = text_field('Phone')
+date_of_birth = text_field('Date of Birth')
+
+controls = [
+    flet.Text('Patient Data'),
+    iin,
+    patient_full_name,
+    phone,
+    date_of_birth,
+]
 
 patient_data_card = flet.Card(
     flet.Container(
