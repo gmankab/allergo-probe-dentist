@@ -10,9 +10,9 @@ def adapt(
     config.page.clean()
     assert config.page.width
     if config.page.width < 768:
-        mobile.main(config.page)
+        mobile.mobile(config.page)
     else:
-        desktop.main(config.page)
+        desktop.desktop(config.page)
 
 
 def main(

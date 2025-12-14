@@ -16,7 +16,7 @@ create_order_row = flet.Row(
 )
 
 
-def main(
+def desktop(
     page: flet.Page,
 ) -> None:
     assert page.width

@@ -15,7 +15,7 @@ create_order_row = flet.Row(
 )
 
 
-def main(
+def mobile(
     page: flet.Page,
 ) -> None:
     page.padding = flet.padding.only(
