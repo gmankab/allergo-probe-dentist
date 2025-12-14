@@ -4,10 +4,15 @@ import config
 import flet
 
 
-controls = [
-    patient_data.patient_data_container,
-    prescription.prescription_container,
-]
+patient_data_row = flet.Row(
+    [patient_data.patient_data_container]
+)
+prescription_row = flet.Row(
+    [prescription.prescription_container]
+)
+create_order_row = flet.Row(
+    [flet.FilledButton('Create order', expand=True)]
+)
 
 
 def main(
@@ -20,15 +25,6 @@ def main(
         right=config.padding,
     )
     page.scroll = flet.ScrollMode.AUTO
-    patient_data_row = flet.Row(
-        [patient_data.patient_data_container]
-    )
-    prescription_row = flet.Row(
-        [prescription.prescription_container]
-    )
-    create_order_row = flet.Row(
-        [flet.FilledButton('Create order', expand=True)]
-    )
     page.add(patient_data_row)
     page.add(prescription_row)
     page.add(create_order_row)
