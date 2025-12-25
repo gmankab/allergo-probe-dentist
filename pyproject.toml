@@ -1,5 +1,5 @@
 [project]
-name = "allergo-probe-dentist"
+name = "allergo-proba-dentist"
 version = "25.0.0"
 readme = "readme.md"
 requires-python = ">=3.9"
@@ -10,7 +10,7 @@ dependencies = [
 
 [tool.flet]
 org = "kz.allergoproba"
-product = "allergo-probe-dentist"
+product = "allergo-proba-dentist"
 company = "allergoproba"
 copyright = ""
 app.module = "main"

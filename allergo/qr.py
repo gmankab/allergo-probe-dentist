@@ -74,7 +74,7 @@ def show_qr(
     global url
     assert patient_data.phone
     assert patient_data.phone.value
-    url.pretty = f'AllergoProbe.kz/order/{patient_data.phone.value}'
+    url.pretty = f'AllergoProba.kz/order/{patient_data.phone.value}'
     url.full = f'https://{url.pretty}'
     image.src_base64 = gen_qr(url.full)
     url_button.text = url.pretty

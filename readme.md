@@ -1,6 +1,6 @@
-# dentist cabinet frontend for AllergoProbe.kz
+# dentist cabinet frontend for AllergoProba.kz
 
-this project is deployed here - https://gmankab.github.io/allergo-probe-dentist
+this project is deployed here - https://gmankab.github.io/allergo-proba-dentist
 
 ### install uv
 
